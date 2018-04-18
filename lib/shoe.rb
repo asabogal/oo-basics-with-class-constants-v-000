@@ -6,9 +6,8 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    # if self.size == 3
     BRANDS << brand unless BRANDS.include?(brand)
-    # end
+
   end
 
   def cobble
