@@ -7,8 +7,8 @@ class Shoe
   def initialize(brand)
     @brand = brand
     # if self.size == 3
-    BRANDS << brand
-    # end 
+    BRANDS << brand unless brand.size > 3
+    # end
   end
 
   def cobble
